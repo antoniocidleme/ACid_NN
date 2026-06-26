@@ -33,8 +33,9 @@ def gera_dataset(path, disp, sens=15):
 
   return janelas_X, janelas_Y
 
-Dataset=0
 
+import torch
+from torch.utils.data import Dataset
 class CustomDataset(Dataset):
     def __init__(self, X, y):
         self.X = X
