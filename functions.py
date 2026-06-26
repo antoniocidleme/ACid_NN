@@ -5,7 +5,7 @@ def gera_dataset(path, disp, sens=15):
   classe_do_aparelho = disp.rsplit("_", 1)[0]
   tamanho_janela = 300
   meia_janela = tamanho_janela // 2
-
+  
   # 1. Calcula a diferença de potência de um segundo para o outro
   diferencas = np.diff(potencia)
 
@@ -33,7 +33,7 @@ def gera_dataset(path, disp, sens=15):
 
   return janelas_X, janelas_Y
 
-
+Dataset=0
 
 class CustomDataset(Dataset):
     def __init__(self, X, y):
