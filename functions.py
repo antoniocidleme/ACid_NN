@@ -183,7 +183,7 @@ def train_model(model, train_loader, val_loader, epochs=20, lr=1e-3, patience=10
 
 
 def show_train_grafic(train_losses, val_losses, es_epoch):
-
+  import matplotlib.pyplot as plt
   plt.plot(train_losses, label="Train Loss")
   plt.plot(val_losses, label="Validation Loss")
   plt.axvline(x=es_epoch, linestyle='--', label='Early Stop')
