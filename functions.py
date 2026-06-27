@@ -182,6 +182,7 @@ def train_model(model, train_loader, val_loader, epochs=20, lr=1e-3, patience=10
 
 
 import matplotlib.pyplot as plt
+
 def show_train_grafic(train_losses, val_losses, es_epoch):
   
   plt.plot(train_losses, label="Train Loss")
